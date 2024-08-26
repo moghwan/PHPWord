@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.33">
     
     
       
@@ -1163,6 +1163,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#specify-the-pdf-renderer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Specify the PDF Renderer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -2120,6 +2135,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#specify-the-pdf-renderer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Specify the PDF Renderer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -2245,6 +2275,25 @@ This HTML can be modified using a callback.</p>
 <span class="nv">$writer</span> <span class="o">=</span> <span class="nx">IOFactory</span><span class="o">::</span><span class="na">createWriter</span><span class="p">(</span><span class="nv">$oPhpWord</span><span class="p">,</span> <span class="s1">&#39;PDF&#39;</span><span class="p">);</span>
 <span class="nv">$writer</span><span class="o">-&gt;</span><span class="na">save</span><span class="p">(</span><span class="no">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/sample.pdf&#39;</span><span class="p">);</span>
 </code></pre></div>
+<h4 id="specify-the-pdf-renderer">Specify the PDF Renderer</h4>
+<p>Before PHPWord can write a PDF, you <strong>must</strong> specify the renderer to use and the path to it.
+Currently, three renderers are supported: </p>
+<ul>
+<li><a href="https://github.com/dompdf/dompdf">DomPDF</a></li>
+<li><a href="https://mpdf.github.io/">MPDF</a></li>
+<li><a href="https://tcpdf.org/">TCPDF</a></li>
+</ul>
+<p>To specify the renderer you use two static <code>Settings</code> functions:</p>
+<ul>
+<li><code>setPdfRendererName</code>: This sets the name of the renderer library to use.
+  Provide one of <a href="https://github.com/PHPOffice/PHPWord/blob/master/src/PhpWord/Settings.php#L39-L41"><code>Settings</code>' three <code>PDF_</code> constants</a> to the function call.</li>
+<li><code>setPdfRendererPath</code>: This sets the path to the renderer library. 
+  This directory is the renderer's package directory within Composer's <em>vendor</em> directory.</li>
+</ul>
+<p>In the code below, you can see an example of setting MPDF as the desired PDF renderer.</p>
+<div class="highlight"><pre><span></span><code><span class="x">Settings::setPdfRendererName(Settings::PDF_RENDERER_MPDF);</span>
+<span class="x">Settings::setPdfRendererPath(__DIR__ . &#39;/../vendor/mpdf/mpdf&#39;);</span>
+</code></pre></div>
 <h2 id="rtf">RTF</h2>
 <p>The name of the writer is <code>RTF</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
@@ -2314,7 +2363,7 @@ This HTML can be modified using a callback.</p>
     <script id="__config" type="application/json">{"base": "..", "features": ["search.highlight", "search.suggest"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../assets/javascripts/bundle.af256bd8.min.js"></script>
       
     
   </body>
