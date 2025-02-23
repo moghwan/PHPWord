@@ -122,7 +122,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/ListItemRun.php"><a href="files/src-phpword-element-listitemrun.html"><abbr title="src/PhpWord/Element/ListItemRun.php">ListItemRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -164,18 +164,18 @@
 <dd>Is part of collection; true for Title, Footnote, Endnote, Chart, and Comment.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a class="" href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#property_commentRangeEnd">$commentRangeEnd</a>
+    <a class="" href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#property_commentsRangeEnd">$commentsRangeEnd</a>
     <span>
-                        &nbsp;: <a href="classes/PhpOffice-PhpWord-Element-Comment.html"><abbr title="\PhpOffice\PhpWord\Element\Comment">Comment</abbr></a>            </span>
+                        &nbsp;: <a href="classes/PhpOffice-PhpWord-Collection-Comments.html"><abbr title="\PhpOffice\PhpWord\Collection\Comments">Comments</abbr></a>            </span>
 </dt>
-<dd>The end position for the linked comment.</dd>
+<dd>The end position for the linked comments.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a class="" href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#property_commentRangeStart">$commentRangeStart</a>
+    <a class="" href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#property_commentsRangeStart">$commentsRangeStart</a>
     <span>
-                        &nbsp;: <a href="classes/PhpOffice-PhpWord-Element-Comment.html"><abbr title="\PhpOffice\PhpWord\Element\Comment">Comment</abbr></a>            </span>
+                        &nbsp;: <a href="classes/PhpOffice-PhpWord-Collection-Comments.html"><abbr title="\PhpOffice\PhpWord\Collection\Comments">Comments</abbr></a>            </span>
 </dt>
-<dd>The start position for the linked comment.</dd>
+<dd>The start position for the linked comments.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/PhpOffice-PhpWord-Element-ListItemRun.html#property_container">$container</a>
@@ -421,6 +421,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/PhpOffice-PhpWord-Element-AbstractContainer.html#method_addRuby">addRuby()</a>
+    <span>
+                                &nbsp;: <a href="classes/PhpOffice-PhpWord-Element-Ruby.html"><abbr title="\PhpOffice\PhpWord\Element\Ruby">Ruby</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/PhpOffice-PhpWord-Element-AbstractContainer.html#method_addSDT">addSDT()</a>
     <span>
                                 &nbsp;: <a href="classes/PhpOffice-PhpWord-Element-SDT.html"><abbr title="\PhpOffice\PhpWord\Element\SDT">SDT</abbr></a>    </span>
@@ -484,16 +490,30 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#method_getCommentRangeEnd">getCommentRangeEnd()</a>
     <span>
-                                &nbsp;: <a href="classes/PhpOffice-PhpWord-Element-Comment.html"><abbr title="\PhpOffice\PhpWord\Element\Comment">Comment</abbr></a>    </span>
+                                &nbsp;: <a href="classes/PhpOffice-PhpWord-Element-Comment.html"><abbr title="\PhpOffice\PhpWord\Element\Comment">Comment</abbr></a>|null    </span>
 </dt>
 <dd>Get comment end.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#method_getCommentRangeStart">getCommentRangeStart()</a>
     <span>
-                                &nbsp;: <a href="classes/PhpOffice-PhpWord-Element-Comment.html"><abbr title="\PhpOffice\PhpWord\Element\Comment">Comment</abbr></a>    </span>
+                                &nbsp;: <a href="classes/PhpOffice-PhpWord-Element-Comment.html"><abbr title="\PhpOffice\PhpWord\Element\Comment">Comment</abbr></a>|null    </span>
 </dt>
 <dd>Get comment start.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#method_getCommentsRangeEnd">getCommentsRangeEnd()</a>
+    <span>
+                                &nbsp;: <a href="classes/PhpOffice-PhpWord-Collection-Comments.html"><abbr title="\PhpOffice\PhpWord\Collection\Comments">Comments</abbr></a>|null    </span>
+</dt>
+<dd>Get comments end.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#method_getCommentsRangeStart">getCommentsRangeStart()</a>
+    <span>
+                                &nbsp;: <a href="classes/PhpOffice-PhpWord-Collection-Comments.html"><abbr title="\PhpOffice\PhpWord\Collection\Comments">Comments</abbr></a>|null    </span>
+</dt>
+<dd>Get comments start.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/PhpOffice-PhpWord-Element-ListItemRun.html#method_getDepth">getDepth()</a>
@@ -776,7 +796,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
     </aside>
 
@@ -803,9 +823,9 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_commentRangeEnd">
-        $commentRangeEnd
-        <a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#property_commentRangeEnd" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_commentsRangeEnd">
+        $commentsRangeEnd
+        <a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#property_commentsRangeEnd" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                 </span>
@@ -813,17 +833,17 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">145</span>
+    <span class="phpdocumentor-element-found-in__line">148</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The end position for the linked comment.</p>
+        <p class="phpdocumentor-summary">The end position for the linked comments.</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/PhpOffice-PhpWord-Element-Comment.html"><abbr title="\PhpOffice\PhpWord\Element\Comment">Comment</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$commentRangeEnd</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/PhpOffice-PhpWord-Collection-Comments.html"><abbr title="\PhpOffice\PhpWord\Collection\Comments">Comments</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$commentsRangeEnd</span>
     </code>
 
     
@@ -840,9 +860,9 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_commentRangeStart">
-        $commentRangeStart
-        <a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#property_commentRangeStart" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_commentsRangeStart">
+        $commentsRangeStart
+        <a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#property_commentsRangeStart" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                 </span>
@@ -850,17 +870,17 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">141</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The start position for the linked comment.</p>
+        <p class="phpdocumentor-summary">The start position for the linked comments.</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/PhpOffice-PhpWord-Element-Comment.html"><abbr title="\PhpOffice\PhpWord\Element\Comment">Comment</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$commentRangeStart</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/PhpOffice-PhpWord-Collection-Comments.html"><abbr title="\PhpOffice\PhpWord\Collection\Comments">Comments</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$commentsRangeStart</span>
     </code>
 
     
@@ -887,7 +907,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/ListItemRun.php"><a href="files/src-phpword-element-listitemrun.html"><abbr title="src/PhpWord/Element/ListItemRun.php">ListItemRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -926,7 +946,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -967,7 +987,7 @@ e.g. footnote will not be available when $docPart is header or footer.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -1008,7 +1028,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 
     </aside>
 
@@ -1045,7 +1065,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -1082,7 +1102,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractContainer.php"><a href="files/src-phpword-element-abstractcontainer.html"><abbr title="src/PhpWord/Element/AbstractContainer.php">AbstractContainer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -1119,7 +1139,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">124</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 
     </aside>
 
@@ -1156,7 +1176,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/TextRun.php"><a href="files/src-phpword-element-textrun.html"><abbr title="src/PhpWord/Element/TextRun.php">TextRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -1193,7 +1213,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -1230,7 +1250,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -1267,7 +1287,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -1304,7 +1324,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/ListItemRun.php"><a href="files/src-phpword-element-listitemrun.html"><abbr title="src/PhpWord/Element/ListItemRun.php">ListItemRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -1341,7 +1361,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -1380,7 +1400,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -1417,7 +1437,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">120</span>
 
     </aside>
 
@@ -1454,7 +1474,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/ListItemRun.php"><a href="files/src-phpword-element-listitemrun.html"><abbr title="src/PhpWord/Element/ListItemRun.php">ListItemRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -1491,7 +1511,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">110</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -1533,7 +1553,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractContainer.php"><a href="files/src-phpword-element-abstractcontainer.html"><abbr title="src/PhpWord/Element/AbstractContainer.php">AbstractContainer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
@@ -1593,7 +1613,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/ListItemRun.php"><a href="files/src-phpword-element-listitemrun.html"><abbr title="src/PhpWord/Element/ListItemRun.php">ListItemRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -1659,7 +1679,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addBookmark</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Bookmark.html"><abbr title="\PhpOffice\PhpWord\Element\Bookmark">Bookmark</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addBookmark</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Bookmark.html"><abbr title="\PhpOffice\PhpWord\Element\Bookmark">Bookmark</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1670,7 +1690,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$name</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value"></span>            </dt>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -1707,7 +1727,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addChart</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$categories</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$style</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$seriesName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Chart.html"><abbr title="\PhpOffice\PhpWord\Element\Chart">Chart</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addChart</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$categories</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$style</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$seriesName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Chart.html"><abbr title="\PhpOffice\PhpWord\Element\Chart">Chart</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1718,35 +1738,35 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$type</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value"></span>            </dt>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$categories</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value"></span>            </dt>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$values</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value"></span>            </dt>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$style</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$seriesName</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -1783,7 +1803,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addCheckBox</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-CheckBox.html"><abbr title="\PhpOffice\PhpWord\Element\CheckBox">CheckBox</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addCheckBox</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-CheckBox.html"><abbr title="\PhpOffice\PhpWord\Element\CheckBox">CheckBox</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1794,28 +1814,28 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$name</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value"></span>            </dt>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$text</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value"></span>            </dt>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$fStyle</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$pStyle</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -1852,7 +1872,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addEndnote</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Endnote.html"><abbr title="\PhpOffice\PhpWord\Element\Endnote">Endnote</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addEndnote</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Endnote.html"><abbr title="\PhpOffice\PhpWord\Element\Endnote">Endnote</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1863,7 +1883,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$pStyle</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -1900,7 +1920,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addField</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$properties</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Field.html"><abbr title="\PhpOffice\PhpWord\Element\Field">Field</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addField</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$properties</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;[]&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;[]&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Field.html"><abbr title="\PhpOffice\PhpWord\Element\Field">Field</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1911,28 +1931,28 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$type</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$properties</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;[]&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;[]&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$text</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -1969,7 +1989,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addFootnote</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Footnote.html"><abbr title="\PhpOffice\PhpWord\Element\Footnote">Footnote</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addFootnote</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Footnote.html"><abbr title="\PhpOffice\PhpWord\Element\Footnote">Footnote</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1980,7 +2000,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$pStyle</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -2017,7 +2037,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addFormField</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-FormField.html"><abbr title="\PhpOffice\PhpWord\Element\FormField">FormField</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addFormField</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-FormField.html"><abbr title="\PhpOffice\PhpWord\Element\FormField">FormField</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2028,21 +2048,21 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$type</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value"></span>            </dt>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$fStyle</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$pStyle</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -2079,7 +2099,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addFormula</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\PhpOffice\Math\Math">Math</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$math</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Formula.html"><abbr title="\PhpOffice\PhpWord\Element\Formula">Formula</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addFormula</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\PhpOffice\Math\Math">Math</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$math</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Formula.html"><abbr title="\PhpOffice\PhpWord\Element\Formula">Formula</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2090,7 +2110,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$math</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PhpOffice\Math\Math">Math</abbr></span>
-                 = <span class="phpdocumentor-signature__argument__default-value"></span>            </dt>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -2127,7 +2147,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addImage</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$style</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$isWatermark</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Image.html"><abbr title="\PhpOffice\PhpWord\Element\Image">Image</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addImage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$style</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$isWatermark</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;false&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Image.html"><abbr title="\PhpOffice\PhpWord\Element\Image">Image</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2138,28 +2158,28 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$source</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value"></span>            </dt>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$style</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$isWatermark</span>
                 : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;false&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$name</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -2196,7 +2216,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addLine</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lineStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Line.html"><abbr title="\PhpOffice\PhpWord\Element\Line">Line</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addLine</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lineStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Line.html"><abbr title="\PhpOffice\PhpWord\Element\Line">Line</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2207,7 +2227,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$lineStyle</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -2244,7 +2264,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addLink</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$target</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$internal</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Link.html"><abbr title="\PhpOffice\PhpWord\Element\Link">Link</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addLink</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$target</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$internal</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;false&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Link.html"><abbr title="\PhpOffice\PhpWord\Element\Link">Link</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2255,35 +2275,35 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$target</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value"></span>            </dt>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$text</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$fStyle</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$pStyle</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$internal</span>
                 : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;false&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -2320,7 +2340,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addListItem</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$txt</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$depth</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$font</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$list</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$para</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-ListItem.html"><abbr title="\PhpOffice\PhpWord\Element\ListItem">ListItem</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addListItem</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$txt</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$depth</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;0&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$font</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$list</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$para</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-ListItem.html"><abbr title="\PhpOffice\PhpWord\Element\ListItem">ListItem</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2331,35 +2351,35 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$txt</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value"></span>            </dt>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$depth</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;0&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$font</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$list</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$para</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -2396,7 +2416,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addListItemRun</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$depth</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$listStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-ListItemRun.html"><abbr title="\PhpOffice\PhpWord\Element\ListItemRun">ListItemRun</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addListItemRun</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$depth</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;0&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$listStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-ListItemRun.html"><abbr title="\PhpOffice\PhpWord\Element\ListItemRun">ListItemRun</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2407,21 +2427,21 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$depth</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;0&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$listStyle</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$pStyle</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -2458,7 +2478,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addObject</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$style</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-OLEObject.html"><abbr title="\PhpOffice\PhpWord\Element\OLEObject">OLEObject</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addObject</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$style</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-OLEObject.html"><abbr title="\PhpOffice\PhpWord\Element\OLEObject">OLEObject</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2471,14 +2491,14 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$source</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value"></span>            </dt>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$style</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -2515,7 +2535,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addOLEObject</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$style</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-OLEObject.html"><abbr title="\PhpOffice\PhpWord\Element\OLEObject">OLEObject</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addOLEObject</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$style</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-OLEObject.html"><abbr title="\PhpOffice\PhpWord\Element\OLEObject">OLEObject</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2526,14 +2546,14 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$source</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value"></span>            </dt>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$style</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -2608,7 +2628,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addPreserveText</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-PreserveText.html"><abbr title="\PhpOffice\PhpWord\Element\PreserveText">PreserveText</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addPreserveText</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-PreserveText.html"><abbr title="\PhpOffice\PhpWord\Element\PreserveText">PreserveText</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2619,21 +2639,21 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$text</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value"></span>            </dt>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$fStyle</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$pStyle</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -2646,6 +2666,68 @@ add the model in the class docblock with <code class="prettyprint">@method</code
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-PreserveText.html"><abbr title="\PhpOffice\PhpWord\Element\PreserveText">PreserveText</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_addRuby">
+        addRuby()
+        <a href="classes/PhpOffice-PhpWord-Element-AbstractContainer.html#method_addRuby" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractContainer.php"><a href="files/src-phpword-element-abstractcontainer.html"><abbr title="src/PhpWord/Element/AbstractContainer.php">AbstractContainer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">addRuby</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpWord-Element-TextRun.html"><abbr title="\PhpOffice\PhpWord\Element\TextRun">TextRun</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$baseText</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpWord-Element-TextRun.html"><abbr title="\PhpOffice\PhpWord\Element\TextRun">TextRun</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rubyText</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpWord-ComplexType-RubyProperties.html"><abbr title="\PhpOffice\PhpWord\ComplexType\RubyProperties">RubyProperties</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$properties</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Ruby.html"><abbr title="\PhpOffice\PhpWord\Element\Ruby">Ruby</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$baseText</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpWord-Element-TextRun.html"><abbr title="\PhpOffice\PhpWord\Element\TextRun">TextRun</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$rubyText</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpWord-Element-TextRun.html"><abbr title="\PhpOffice\PhpWord\Element\TextRun">TextRun</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$properties</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpWord-ComplexType-RubyProperties.html"><abbr title="\PhpOffice\PhpWord\ComplexType\RubyProperties">RubyProperties</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Ruby.html"><abbr title="\PhpOffice\PhpWord\Element\Ruby">Ruby</abbr></a></span>
             </section>
 
 </article>
@@ -2670,7 +2752,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addSDT</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-SDT.html"><abbr title="\PhpOffice\PhpWord\Element\SDT">SDT</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addSDT</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-SDT.html"><abbr title="\PhpOffice\PhpWord\Element\SDT">SDT</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2681,7 +2763,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$type</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value"></span>            </dt>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -2718,7 +2800,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addShape</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$style</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Shape.html"><abbr title="\PhpOffice\PhpWord\Element\Shape">Shape</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addShape</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$style</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Shape.html"><abbr title="\PhpOffice\PhpWord\Element\Shape">Shape</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2729,14 +2811,14 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$type</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value"></span>            </dt>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$style</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -2773,7 +2855,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$style</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Table.html"><abbr title="\PhpOffice\PhpWord\Element\Table">Table</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$style</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Table.html"><abbr title="\PhpOffice\PhpWord\Element\Table">Table</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2784,7 +2866,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$style</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -2821,7 +2903,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addText</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Text.html"><abbr title="\PhpOffice\PhpWord\Element\Text">Text</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addText</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Text.html"><abbr title="\PhpOffice\PhpWord\Element\Text">Text</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2832,21 +2914,21 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$text</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value"></span>            </dt>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$fStyle</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$pStyle</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -2883,7 +2965,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addTextBox</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$style</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-TextBox.html"><abbr title="\PhpOffice\PhpWord\Element\TextBox">TextBox</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addTextBox</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$style</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-TextBox.html"><abbr title="\PhpOffice\PhpWord\Element\TextBox">TextBox</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2894,7 +2976,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$style</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -2931,7 +3013,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addTextBreak</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$count</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">addTextBreak</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$count</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;1&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2942,21 +3024,21 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$count</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">1</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;1&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$fStyle</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$pStyle</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -2989,7 +3071,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addTextRun</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-TextRun.html"><abbr title="\PhpOffice\PhpWord\Element\TextRun">TextRun</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addTextRun</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-TextRun.html"><abbr title="\PhpOffice\PhpWord\Element\TextRun">TextRun</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -3000,7 +3082,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$pStyle</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -3037,7 +3119,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addTitle</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$depth</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageNumber</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Title.html"><abbr title="\PhpOffice\PhpWord\Element\Title">Title</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addTitle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$depth</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;1&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageNumber</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Title.html"><abbr title="\PhpOffice\PhpWord\Element\Title">Title</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -3048,21 +3130,21 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$text</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value"></span>            </dt>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$depth</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">1</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;1&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$pageNumber</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -3099,7 +3181,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addTOC</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fontStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tocStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$minDepth</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$maxDepth</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">9</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-TOC.html"><abbr title="\PhpOffice\PhpWord\Element\TOC">TOC</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">addTOC</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fontStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tocStyle</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$minDepth</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;1&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$maxDepth</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"> = &#039;9&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-TOC.html"><abbr title="\PhpOffice\PhpWord\Element\TOC">TOC</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -3110,28 +3192,28 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$fontStyle</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$tocStyle</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;null&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$minDepth</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">1</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;1&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$maxDepth</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">9</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value"> = &#039;9&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -3161,7 +3243,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractContainer.php"><a href="files/src-phpword-element-abstractcontainer.html"><abbr title="src/PhpWord/Element/AbstractContainer.php">AbstractContainer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">216</span>
+    <span class="phpdocumentor-element-found-in__line">218</span>
 
     </aside>
 
@@ -3200,7 +3282,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">317</span>
+    <span class="phpdocumentor-element-found-in__line">346</span>
 
     </aside>
 
@@ -3208,7 +3290,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getCommentRangeEnd</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Comment.html"><abbr title="\PhpOffice\PhpWord\Element\Comment">Comment</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">getCommentRangeEnd</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Comment.html"><abbr title="\PhpOffice\PhpWord\Element\Comment">Comment</abbr></a>|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -3221,7 +3303,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Comment.html"><abbr title="\PhpOffice\PhpWord\Element\Comment">Comment</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Comment.html"><abbr title="\PhpOffice\PhpWord\Element\Comment">Comment</abbr></a>|null</span>
             </section>
 
 </article>
@@ -3239,7 +3321,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">295</span>
+    <span class="phpdocumentor-element-found-in__line">302</span>
 
     </aside>
 
@@ -3247,7 +3329,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getCommentRangeStart</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Comment.html"><abbr title="\PhpOffice\PhpWord\Element\Comment">Comment</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">getCommentRangeStart</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Comment.html"><abbr title="\PhpOffice\PhpWord\Element\Comment">Comment</abbr></a>|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -3260,7 +3342,85 @@ add the model in the class docblock with <code class="prettyprint">@method</code
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Comment.html"><abbr title="\PhpOffice\PhpWord\Element\Comment">Comment</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Element-Comment.html"><abbr title="\PhpOffice\PhpWord\Element\Comment">Comment</abbr></a>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getCommentsRangeEnd">
+        getCommentsRangeEnd()
+        <a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#method_getCommentsRangeEnd" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">338</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get comments end.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getCommentsRangeEnd</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Collection-Comments.html"><abbr title="\PhpOffice\PhpWord\Collection\Comments">Comments</abbr></a>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Collection-Comments.html"><abbr title="\PhpOffice\PhpWord\Collection\Comments">Comments</abbr></a>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getCommentsRangeStart">
+        getCommentsRangeStart()
+        <a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#method_getCommentsRangeStart" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">294</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get comments start.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getCommentsRangeStart</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Collection-Comments.html"><abbr title="\PhpOffice\PhpWord\Collection\Comments">Comments</abbr></a>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpWord-Collection-Comments.html"><abbr title="\PhpOffice\PhpWord\Collection\Comments">Comments</abbr></a>|null</span>
             </section>
 
 </article>
@@ -3278,7 +3438,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/ListItemRun.php"><a href="files/src-phpword-element-listitemrun.html"><abbr title="src/PhpWord/Element/ListItemRun.php">ListItemRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -3317,7 +3477,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">192</span>
+    <span class="phpdocumentor-element-found-in__line">193</span>
 
     </aside>
 
@@ -3356,7 +3516,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">202</span>
+    <span class="phpdocumentor-element-found-in__line">203</span>
 
     </aside>
 
@@ -3395,7 +3555,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractContainer.php"><a href="files/src-phpword-element-abstractcontainer.html"><abbr title="src/PhpWord/Element/AbstractContainer.php">AbstractContainer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">182</span>
+    <span class="phpdocumentor-element-found-in__line">184</span>
 
     </aside>
 
@@ -3444,7 +3604,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">247</span>
+    <span class="phpdocumentor-element-found-in__line">248</span>
 
     </aside>
 
@@ -3483,7 +3643,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">227</span>
+    <span class="phpdocumentor-element-found-in__line">228</span>
 
     </aside>
 
@@ -3522,7 +3682,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractContainer.php"><a href="files/src-phpword-element-abstractcontainer.html"><abbr title="src/PhpWord/Element/AbstractContainer.php">AbstractContainer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">170</span>
+    <span class="phpdocumentor-element-found-in__line">172</span>
 
     </aside>
 
@@ -3561,7 +3721,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">285</span>
+    <span class="phpdocumentor-element-found-in__line">286</span>
 
     </aside>
 
@@ -3600,7 +3760,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/TextRun.php"><a href="files/src-phpword-element-textrun.html"><abbr title="src/PhpWord/Element/TextRun.php">TextRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -3639,7 +3799,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">339</span>
+    <span class="phpdocumentor-element-found-in__line">384</span>
 
     </aside>
 
@@ -3678,7 +3838,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">152</span>
+    <span class="phpdocumentor-element-found-in__line">153</span>
 
     </aside>
 
@@ -3717,7 +3877,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">265</span>
+    <span class="phpdocumentor-element-found-in__line">266</span>
 
     </aside>
 
@@ -3756,7 +3916,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">170</span>
+    <span class="phpdocumentor-element-found-in__line">171</span>
 
     </aside>
 
@@ -3795,7 +3955,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/ListItemRun.php"><a href="files/src-phpword-element-listitemrun.html"><abbr title="src/PhpWord/Element/ListItemRun.php">ListItemRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -3834,7 +3994,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/TextRun.php"><a href="files/src-phpword-element-textrun.html"><abbr title="src/PhpWord/Element/TextRun.php">TextRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 
     </aside>
 
@@ -3872,7 +4032,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">461</span>
+    <span class="phpdocumentor-element-found-in__line">506</span>
 
     </aside>
 
@@ -3911,7 +4071,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">422</span>
+    <span class="phpdocumentor-element-found-in__line">467</span>
 
     </aside>
 
@@ -3950,7 +4110,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractContainer.php"><a href="files/src-phpword-element-abstractcontainer.html"><abbr title="src/PhpWord/Element/AbstractContainer.php">AbstractContainer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">196</span>
+    <span class="phpdocumentor-element-found-in__line">198</span>
 
     </aside>
 
@@ -3958,7 +4118,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">removeElement</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int|<a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html"><abbr title="\PhpOffice\PhpWord\Element\AbstractElement">AbstractElement</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$toRemove</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">removeElement</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html"><abbr title="\PhpOffice\PhpWord\Element\AbstractElement">AbstractElement</abbr></a>|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$toRemove</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -3968,7 +4128,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$toRemove</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int|<a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html"><abbr title="\PhpOffice\PhpWord\Element\AbstractElement">AbstractElement</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html"><abbr title="\PhpOffice\PhpWord\Element\AbstractElement">AbstractElement</abbr></a>|int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -3995,7 +4155,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">473</span>
+    <span class="phpdocumentor-element-found-in__line">518</span>
 
     </aside>
 
@@ -4058,7 +4218,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">325</span>
+    <span class="phpdocumentor-element-found-in__line">358</span>
 
     </aside>
 
@@ -4103,7 +4263,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">303</span>
+    <span class="phpdocumentor-element-found-in__line">314</span>
 
     </aside>
 
@@ -4148,7 +4308,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">181</span>
+    <span class="phpdocumentor-element-found-in__line">182</span>
 
     </aside>
 
@@ -4200,7 +4360,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">255</span>
+    <span class="phpdocumentor-element-found-in__line">256</span>
 
     </aside>
 
@@ -4235,7 +4395,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">237</span>
+    <span class="phpdocumentor-element-found-in__line">238</span>
 
     </aside>
 
@@ -4280,7 +4440,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/TextRun.php"><a href="files/src-phpword-element-textrun.html"><abbr title="src/PhpWord/Element/TextRun.php">TextRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -4329,7 +4489,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">349</span>
+    <span class="phpdocumentor-element-found-in__line">394</span>
 
     </aside>
 
@@ -4376,7 +4536,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">160</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
@@ -4421,7 +4581,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">275</span>
+    <span class="phpdocumentor-element-found-in__line">276</span>
 
     </aside>
 
@@ -4466,7 +4626,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">451</span>
+    <span class="phpdocumentor-element-found-in__line">496</span>
 
     </aside>
 
@@ -4511,7 +4671,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractContainer.php"><a href="files/src-phpword-element-abstractcontainer.html"><abbr title="src/PhpWord/Element/AbstractContainer.php">AbstractContainer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">135</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -4562,7 +4722,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">489</span>
+    <span class="phpdocumentor-element-found-in__line">534</span>
 
     </aside>
 
@@ -4641,7 +4801,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">436</span>
+    <span class="phpdocumentor-element-found-in__line">481</span>
 
     </aside>
 
@@ -4649,7 +4809,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">setNewStyle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$styleObject</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|array&lt;string|int, mixed&gt;|<a href="classes/PhpOffice-PhpWord-Style.html"><abbr title="\PhpOffice\PhpWord\Style">Style</abbr></a>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$styleValue</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$returnObject</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">setNewStyle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$styleObject</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|array&lt;string|int, mixed&gt;|string|<a href="classes/PhpOffice-PhpWord-Style.html"><abbr title="\PhpOffice\PhpWord\Style">Style</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$styleValue</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$returnObject</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -4668,7 +4828,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$styleValue</span>
-                : <span class="phpdocumentor-signature__argument__return-type">null|array&lt;string|int, mixed&gt;|<a href="classes/PhpOffice-PhpWord-Style.html"><abbr title="\PhpOffice\PhpWord\Style">Style</abbr></a>|string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">null|array&lt;string|int, mixed&gt;|string|<a href="classes/PhpOffice-PhpWord-Style.html"><abbr title="\PhpOffice\PhpWord\Style">Style</abbr></a></span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Style value</p>
@@ -4706,7 +4866,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractContainer.php"><a href="files/src-phpword-element-abstractcontainer.html"><abbr title="src/PhpWord/Element/AbstractContainer.php">AbstractContainer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">228</span>
+    <span class="phpdocumentor-element-found-in__line">230</span>
 
     </aside>
 
@@ -4755,7 +4915,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">212</span>
+    <span class="phpdocumentor-element-found-in__line">213</span>
 
     </aside>
 
@@ -4798,7 +4958,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">407</span>
+    <span class="phpdocumentor-element-found-in__line">452</span>
 
     </aside>
 
@@ -4833,7 +4993,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpWord/Element/AbstractElement.php"><a href="files/src-phpword-element-abstractelement.html"><abbr title="src/PhpWord/Element/AbstractElement.php">AbstractElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">378</span>
+    <span class="phpdocumentor-element-found-in__line">423</span>
 
     </aside>
 
@@ -4973,8 +5133,8 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                 <li>
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#property_collectionRelation">$collectionRelation</a></li>
-                                                    <li class=""><a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#property_commentRangeEnd">$commentRangeEnd</a></li>
-                                                    <li class=""><a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#property_commentRangeStart">$commentRangeStart</a></li>
+                                                    <li class=""><a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#property_commentsRangeEnd">$commentsRangeEnd</a></li>
+                                                    <li class=""><a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#property_commentsRangeStart">$commentsRangeStart</a></li>
                                                     <li class=""><a href="classes/PhpOffice-PhpWord-Element-ListItemRun.html#property_container">$container</a></li>
                                                     <li class=""><a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#property_docPart">$docPart</a></li>
                                                     <li class=""><a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#property_docPartId">$docPartId</a></li>
@@ -5017,6 +5177,7 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                                             <li class=""><a href="classes/PhpOffice-PhpWord-Element-AbstractContainer.html#method_addOLEObject">addOLEObject()</a></li>
                                             <li class=""><a href="classes/PhpOffice-PhpWord-Element-AbstractContainer.html#method_addPageBreak">addPageBreak()</a></li>
                                             <li class=""><a href="classes/PhpOffice-PhpWord-Element-AbstractContainer.html#method_addPreserveText">addPreserveText()</a></li>
+                                            <li class=""><a href="classes/PhpOffice-PhpWord-Element-AbstractContainer.html#method_addRuby">addRuby()</a></li>
                                             <li class=""><a href="classes/PhpOffice-PhpWord-Element-AbstractContainer.html#method_addSDT">addSDT()</a></li>
                                             <li class=""><a href="classes/PhpOffice-PhpWord-Element-AbstractContainer.html#method_addShape">addShape()</a></li>
                                             <li class=""><a href="classes/PhpOffice-PhpWord-Element-AbstractContainer.html#method_addTable">addTable()</a></li>
@@ -5029,6 +5190,8 @@ add the model in the class docblock with <code class="prettyprint">@method</code
                                             <li class=""><a href="classes/PhpOffice-PhpWord-Element-AbstractContainer.html#method_countElements">countElements()</a></li>
                                             <li class=""><a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#method_getCommentRangeEnd">getCommentRangeEnd()</a></li>
                                             <li class=""><a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#method_getCommentRangeStart">getCommentRangeStart()</a></li>
+                                            <li class=""><a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#method_getCommentsRangeEnd">getCommentsRangeEnd()</a></li>
+                                            <li class=""><a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#method_getCommentsRangeStart">getCommentsRangeStart()</a></li>
                                             <li class=""><a href="classes/PhpOffice-PhpWord-Element-ListItemRun.html#method_getDepth">getDepth()</a></li>
                                             <li class=""><a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#method_getDocPart">getDocPart()</a></li>
                                             <li class=""><a href="classes/PhpOffice-PhpWord-Element-AbstractElement.html#method_getDocPartId">getDocPartId()</a></li>
